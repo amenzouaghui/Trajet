@@ -1,0 +1,91 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--surface-color);
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: var(--transition);
+  outline: none;
+}
+
+.input-field.has-icon {
+  padding-left: 2.75rem;
+}
+
+.input-field:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.input-field::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.input-error {
+  border-color: var(--accent);
+}
+
+.input-error:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.2);
+}
+
+.input-error-msg {
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-top: 0.25rem;
+}
+
+.input-success {
+  border-color: var(--success);
+}
+
+.input-success:focus {
+  border-color: var(--success);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.input-success-msg {
+  font-size: 0.75rem;
+  color: var(--success);
+  margin-top: 0.25rem;
+}
+
+/* For dark mode we might need subtle adjustments */
+@media (prefers-color-scheme: dark) {
+  .input-field:focus {
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.4);
+  }
+}

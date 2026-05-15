@@ -1,0 +1,150 @@
+.trip-card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.trip-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+.trip-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.trip-driver {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.driver-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.driver-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.driver-name {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.driver-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.star-icon {
+  color: #fbbf24;
+}
+
+.trip-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  background-color: var(--primary-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.trip-route {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.route-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--primary);
+  background-color: var(--surface-color);
+  z-index: 1;
+}
+
+.timeline-dot.end {
+  border-color: var(--secondary);
+}
+
+.timeline-line {
+  width: 2px;
+  height: 30px;
+  background-color: var(--border-color);
+  margin: 2px 0;
+}
+
+.route-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.route-point {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.point-time {
+  font-weight: 600;
+  color: var(--text-main);
+  min-width: 45px;
+}
+
+.point-city {
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.trip-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border-color);
+}
+
+.trip-meta {
+  display: flex;
+  gap: 1rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}

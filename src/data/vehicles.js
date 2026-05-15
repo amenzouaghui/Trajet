@@ -1,0 +1,51 @@
+// Données des marques, modèles et couleurs de véhicules
+
+export const VEHICLE_MAKES = {
+  'Peugeot': ['106', '107', '108', '205', '206', '207', '208', '301', '308', '407', '408', '508', '2008', '3008', '5008', 'Partner'],
+  'Renault': ['Clio', 'Megane', 'Laguna', 'Symbol', 'Logan', 'Sandero', 'Duster', 'Captur', 'Kadjar', 'Fluence', 'Scenic', 'Kangoo', 'Trafic'],
+  'Citroën': ['C1', 'C2', 'C3', 'C4', 'C5', 'C-Elysée', 'Berlingo', 'Saxo', 'Xsara', 'Picasso', 'DS3', 'DS5'],
+  'Volkswagen': ['Polo', 'Golf', 'Passat', 'Jetta', 'Tiguan', 'Touareg', 'Caddy', 'Touran', 'T-Roc', 'Arteon'],
+  'Seat': ['Ibiza', 'Leon', 'Altea', 'Ateca', 'Arona', 'Toledo', 'Cordoba', 'Alhambra'],
+  'Opel': ['Astra', 'Corsa', 'Vectra', 'Zafira', 'Insignia', 'Mokka', 'Crossland', 'Grandland'],
+  'Ford': ['Fiesta', 'Focus', 'Mondeo', 'Kuga', 'EcoSport', 'Puma', 'Galaxy', 'Transit'],
+  'Toyota': ['Yaris', 'Corolla', 'Camry', 'Auris', 'Avensis', 'RAV4', 'Land Cruiser', 'Hilux', 'Prius'],
+  'Hyundai': ['i10', 'i20', 'i30', 'i40', 'Tucson', 'Santa Fe', 'Sonata', 'Elantra', 'Accent'],
+  'Kia': ['Picanto', 'Rio', 'Ceed', 'Sportage', 'Sorento', 'Stonic', 'Proceed', 'Niro'],
+  'Dacia': ['Logan', 'Sandero', 'Duster', 'Lodgy', 'Dokker', 'Stepway'],
+  'Fiat': ['Punto', 'Tipo', 'Bravo', 'Panda', '500', 'Doblo', 'Linea', 'Albea'],
+  'Skoda': ['Fabia', 'Octavia', 'Superb', 'Rapid', 'Karoq', 'Kodiaq', 'Scala'],
+  'Suzuki': ['Alto', 'Swift', 'Vitara', 'Baleno', 'Jimny', 'Grand Vitara', 'SX4'],
+  'Nissan': ['Micra', 'Juke', 'Qashqai', 'X-Trail', 'Navara', 'Almera', 'Primera'],
+  'Honda': ['Jazz', 'Civic', 'Accord', 'CR-V', 'HR-V', 'FR-V'],
+  'Mercedes': ['Classe A', 'Classe B', 'Classe C', 'Classe E', 'Classe S', 'GLA', 'GLC', 'GLK', 'Sprinter', 'Vito'],
+  'BMW': ['Série 1', 'Série 2', 'Série 3', 'Série 4', 'Série 5', 'Série 7', 'X1', 'X3', 'X5', 'X6'],
+  'Audi': ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A8', 'Q2', 'Q3', 'Q5', 'Q7', 'TT'],
+  'Chevrolet': ['Aveo', 'Cruze', 'Captiva', 'Epica', 'Malibu', 'Spark', 'Trax'],
+  'Mazda': ['Mazda 2', 'Mazda 3', 'Mazda 6', 'CX-3', 'CX-5', 'CX-7', 'BT-50'],
+  'Mitsubishi': ['Lancer', 'Colt', 'Galant', 'Eclipse', 'Outlander', 'Pajero', 'L200'],
+  'Subaru': ['Impreza', 'Legacy', 'Outback', 'Forester', 'XV', 'BRZ'],
+  'Jeep': ['Renegade', 'Compass', 'Cherokee', 'Grand Cherokee', 'Wrangler'],
+};
+
+export const COLORS = [
+  { value: 'Blanc', label: '⬜ Blanc', hex: '#FFFFFF' },
+  { value: 'Noir', label: '⬛ Noir', hex: '#1a1a1a' },
+  { value: 'Gris', label: '🔲 Gris', hex: '#808080' },
+  { value: 'Gris Argent', label: '🔲 Gris Argent', hex: '#C0C0C0' },
+  { value: 'Rouge', label: '🟥 Rouge', hex: '#DC2626' },
+  { value: 'Bleu', label: '🟦 Bleu', hex: '#2563EB' },
+  { value: 'Bleu Marine', label: '🟦 Bleu Marine', hex: '#1e3a5f' },
+  { value: 'Bleu Clair', label: '🟦 Bleu Clair', hex: '#60A5FA' },
+  { value: 'Vert', label: '🟩 Vert', hex: '#16A34A' },
+  { value: 'Vert Foncé', label: '🟩 Vert Foncé', hex: '#14532d' },
+  { value: 'Jaune', label: '🟨 Jaune', hex: '#EAB308' },
+  { value: 'Orange', label: '🟧 Orange', hex: '#F97316' },
+  { value: 'Marron', label: '🟫 Marron', hex: '#92400e' },
+  { value: 'Beige', label: '🟫 Beige', hex: '#D4B483' },
+  { value: 'Bordeaux', label: '🟥 Bordeaux', hex: '#7f1d1d' },
+  { value: 'Violet', label: '🟪 Violet', hex: '#7C3AED' },
+  { value: 'Rose', label: '🌸 Rose', hex: '#EC4899' },
+  { value: 'Or', label: '✨ Or', hex: '#D97706' },
+];
+
+export const MAKE_NAMES = Object.keys(VEHICLE_MAKES).sort();

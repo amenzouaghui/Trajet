@@ -1,0 +1,7 @@
+// Middleware : vérifie que l'utilisateur connecté est un admin
+module.exports = (req, res, next) => {
+  if (!req.user || req.user.role !== 'admin') {
+    return res.status(403).json({ message: 'Accès réservé aux administrateurs' });
+  }
+  next();
+};
